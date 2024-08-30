@@ -4,7 +4,7 @@ package com.dh.clinica.dao.impl;
 
 import com.dh.clinica.dao.IDao;
 import com.dh.clinica.db.H2Connection;
-import com.dh.clinica.model.Domicilio;
+import com.dh.clinica.entity.Domicilio;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

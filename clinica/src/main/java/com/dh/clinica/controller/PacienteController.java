@@ -1,6 +1,6 @@
 package com.dh.clinica.controller;
 
-import com.dh.clinica.model.Paciente;
+import com.dh.clinica.entity.Paciente;
 import com.dh.clinica.service.PacienteService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -37,6 +37,7 @@ public class PacienteController {
     }
     @GetMapping("/buscartodos")
     public ResponseEntity<List<Paciente>> buscarTodos(){
+
         return ResponseEntity.ok(pacienteService.buscarTodos());
     }
 

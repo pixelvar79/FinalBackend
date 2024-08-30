@@ -3,7 +3,7 @@ package com.dh.clinica;
 
 import com.dh.clinica.dao.impl.OdontologoDaoH2;
 import com.dh.clinica.db.H2Connection;
-import com.dh.clinica.model.Odontologo;
+import com.dh.clinica.entity.Odontologo;
 import com.dh.clinica.service.OdontologoService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -12,9 +12,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 

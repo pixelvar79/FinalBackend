@@ -1,7 +1,7 @@
 package com.dh.clinica.dao.impl;
 
 import com.dh.clinica.dao.IDao;
-import com.dh.clinica.model.Turno;
+import com.dh.clinica.entity.Turno;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;

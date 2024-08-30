@@ -1,9 +1,9 @@
 package com.dh.clinica.service;
 
 import com.dh.clinica.dao.IDao;
-import com.dh.clinica.model.Odontologo;
-import com.dh.clinica.model.Paciente;
-import com.dh.clinica.model.Turno;
+import com.dh.clinica.entity.Odontologo;
+import com.dh.clinica.entity.Paciente;
+import com.dh.clinica.entity.Turno;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,17 +32,21 @@ public class TurnoService {
         return turnoARetornar;
     }
     public Turno buscarPorId(Integer id){
+
         return turnoIDao.buscarPorId(id);
     }
 
     public List<Turno> buscarTodos(){
+
         return turnoIDao.buscarTodos();
     }
     public void modificarTurno(Turno turno){
+
         turnoIDao.modificar(turno);
     }
 
     public void eliminarTurno(Integer id){
+
         turnoIDao.eliminar(id);
     }
 

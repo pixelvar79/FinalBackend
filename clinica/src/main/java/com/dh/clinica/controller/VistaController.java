@@ -1,7 +1,7 @@
 package com.dh.clinica.controller;
 
-import com.dh.clinica.model.Odontologo;
-import com.dh.clinica.model.Paciente;
+import com.dh.clinica.entity.Odontologo;
+import com.dh.clinica.entity.Paciente;
 import com.dh.clinica.service.OdontologoService;
 import com.dh.clinica.service.PacienteService;
 import org.springframework.stereotype.Controller;
