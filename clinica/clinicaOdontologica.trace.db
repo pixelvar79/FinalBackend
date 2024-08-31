@@ -236,7 +236,7 @@ UPDATE ODONTOLOGOS SET MATRICULA=?, NOMBRE=?,APELLIDO=? WHERE ID=? [90012-224]
 	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
 	at com.dh.clinica.dao.impl.OdontologoDaoH2.modificar(OdontologoDaoH2.java:152)
 	at com.dh.clinica.dao.impl.OdontologoDaoH2.modificar(OdontologoDaoH2.java:18)
-	at com.dh.clinica.service.OdontologoService.modificarOdontologo(OdontologoService.java:35)
+	at com.dh.clinica.service.impl.OdontologoService.modificarOdontologo(OdontologoService.java:35)
 	at com.dh.clinica.controller.OdontologoController.modificarOdontologo(OdontologoController.java:38)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
