@@ -1,5 +1,6 @@
 package com.dh.clinica.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,7 +19,11 @@ public class Turno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @ManyToOne
+    //@JsonBackReference(value ="paciente-turnos")
     private Paciente paciente;
+    @ManyToOne
+    //@JsonBackReference(value ="odontologo-turnos")
     private Odontologo odontologo;
     private LocalDate fecha;
 
