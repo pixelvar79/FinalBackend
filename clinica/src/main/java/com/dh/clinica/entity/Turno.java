@@ -20,10 +20,11 @@ public class Turno {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @ManyToOne
-    //@JsonBackReference(value ="paciente-turnos")
+    @JsonBackReference(value ="paciente-turno")
+
     private Paciente paciente;
     @ManyToOne
-    //@JsonBackReference(value ="odontologo-turnos")
+    @JsonBackReference(value ="odontologo-turno")
     private Odontologo odontologo;
     private LocalDate fecha;
 

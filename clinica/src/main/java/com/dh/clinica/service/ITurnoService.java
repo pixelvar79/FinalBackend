@@ -1,4 +1,7 @@
 package com.dh.clinica.service;
+import com.dh.clinica.dto.request.TurnoModificarDto;
+import com.dh.clinica.dto.request.TurnoRequestDto;
+import com.dh.clinica.dto.response.TurnoResponseDto;
 import com.dh.clinica.entity.Paciente;
 import com.dh.clinica.entity.Turno;
 
@@ -6,14 +9,15 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ITurnoService {
-    Turno guardarTurno(Turno turno);
+    TurnoResponseDto guardarTurno(TurnoRequestDto turnoRequestDto);
 
-    Optional<Turno> buscarPorId(Integer id);
+    Optional<TurnoResponseDto> buscarPorId(Integer id);
 
-    List<Turno> buscarTodos();
+    List<TurnoResponseDto> buscarTodos();
 
-    void modificarTurno(Turno turno);
+    void modificarTurno(TurnoModificarDto turnoModificarDto);
     void eliminarTurno(Integer id);
+
 }
 
 

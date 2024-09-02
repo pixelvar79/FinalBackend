@@ -1,6 +1,7 @@
 package com.dh.clinica.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,12 +22,13 @@ public class Odontologo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer matricula;
+    private String matricula;
     private String nombre;
     private String apellido;
 
     @OneToMany(mappedBy = "odontologo")
-    @JsonIgnore
+    //@JsonIgnore
+    @JsonManagedReference(value = "odontologo-turno")
     private Set<Turno> turnoSet;
 
     @Override
